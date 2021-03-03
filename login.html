@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+
+	<!-- ARCHIVOS CSS BOOTSTRAP 4 -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ARCHIVOS CSS PERSONALIZADOS -->
+	<link type="text/css" rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	<!-- menu -->
+	<nav id="menu" class="container servicios mt-4 rounded">
+		<ul class="d-flex justify-content-center justify-content-md-around p-1 rounded font-weight-bold">
+			<li><div class="item2 p-2"><a href="#podcast">Podcast</a></div></li>
+			<li><div class="item3 p-2"><a href="#programas">Programas Radio</a></div></li>
+			<li><div class="item4 p-2"><a href="#contacto">Contacto</a></div></li>
+			<li><div class="item4 p-2"><a id="modalSesion" href="#" data-toggle="modal" data-target="#ventanaModal">Iniciar sesion</a></div></li>
+			<li><div class="item4 p-2"><a id="cerrarSesion" href="#">cerrar sesion</a></div></li>
+		</ul>
+  	</nav>
+  		
+  	<div class="container">
+  		<div id="root"></div>
+  		<div class="row">
+  			<div id="name" class="col-12"></div>
+  		</div>
+  	</div>
+
+
+
+  	<!-- modal -->
+	<div class="modal fade" tabindex="-1" id="ventanaModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center">Radio Xochimilco</h5>
+				</div>
+				<div class="modal-body">
+					<p class="display-4 text-center">Iniciar con:</p>
+				</div>
+				<div class="modal-footer">
+					<div class="d-grid gap-2 col-6 mx-auto">
+ 				 		<button id="loginGoogle" class="btn btn-primary" type="button" data-dismiss="modal">Inicia sesión con Google</button>
+					</div>
+					<div class="d-grid gap-2 col-6 mx-auto">
+ 				 		<button id="loginFacebook" class="btn btn-primary" type="button" data-dismiss="modal" >Inicia sesión con Facebook</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--- ----------------------------------------------------------------------------------------------------------------------------- -->
+	<!-- ARCHIVOS BOOTSTRAP JAVASCRIPT -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- FIREBASE -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyAZ41zwcZDlPK1GZDQt0lKbfUiUkxD4Y0g",
+	    authDomain: "primerproyecto-93d41.firebaseapp.com",
+	    databaseURL: "https://primerproyecto-93d41-default-rtdb.firebaseio.com",
+	    projectId: "primerproyecto-93d41",
+	    storageBucket: "primerproyecto-93d41.appspot.com",
+	    messagingSenderId: "2631237177",
+	    appId: "1:2631237177:web:46ec8f3c53d32d037ad7e8",
+	    measurementId: "G-X3Y7KQ2XGG"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+
+	<!-- ARCHIVO JS LOCAL -->
+ 	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
