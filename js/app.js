@@ -44,6 +44,7 @@ firebase.auth().onAuthStateChanged(user => {
 		console.log("auth: sesion iniciada");
 		$('#root').append("<img width='50px' src='"+user.photoURL+"' class='rounded img-fluid  d-flex m-auto m-0 pt-3' />");
   		$('#name').append(" <p class='display-4 text-center'> "+user.displayName+" </p> ");
+  		$('#name').append(" <form action='https://www.paypal.com/donate' method='post' target='_top'> <input type='hidden' name='hosted_button_id' value='QCL39VZK4DYT4' /> <input width='170px' class='rounded img-fluid  d-flex m-auto m-0' type='image' src='https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif' border='0' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Donate with PayPal button' /> <img alt='' border='0' src='https://www.paypal.com/es_MX/i/scr/pixel.gif' width='1' height='1' /> </form> ");
   		$('#modalSesion').hide();
   		$('#cerrarSesion').show(); 
 
